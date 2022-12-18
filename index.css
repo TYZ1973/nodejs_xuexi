@@ -1,0 +1,48 @@
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-image: linear-gradient(to bottom right , rgb(0, 137, 171) , gold) 
+
+    /* 从上到下，蓝色渐变到红色 */
+     /* linear-gradient(blue, red); */
+ 
+     /* 渐变轴为45度，从蓝色渐变到红色 */
+     /* linear-gradient(45deg, blue, red); */
+  
+    /* 从右下到左上、从蓝色渐变到红色 */
+    /* linear-gradient(to left top, blue, red); */
+  
+    /* 从下到上，从蓝色开始渐变、到高度40%位置是绿色渐变开始、最后以红色结束 */
+    /* linear-gradient(0deg, blue, green 40%, red); */
+        }
+        .box{
+            width: 400px;
+            height: 250px;
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius: 45px;
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform:  translate(-50% , -50%);
+            /* 第一个值左右 第二个值 上下 */
+            /* 上面设置了 left 50% 之后 ，div 的位置有一些偏又，所以用translate 向负方向也就是左侧移动自己宽度的50% 以达到居中 */
+            box-shadow: 1px 1px 10px #fff;
+            text-shadow: 0px 1px 30px white;
+
+            display: flex; 
+            /* 设置成flex 之后可以方便的排列下面的小div们 */
+            justify-content: space-around; /* 设置文字 也就是 div 的排列方式 */     
+            align-items: center; /* 设置文字的位置 */
+            font-size: 70px;
+            user-select: none;   /* 设置让不让选中 */
+            padding: 0 20px;
+
+            
+            -webkit-box-reflect: below 2px linear-gradient(transparent, rgba(0, 0, 0, .5));
+
+        }
+
+    
